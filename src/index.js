@@ -11,14 +11,15 @@ document.addEventListener("DOMContentLoaded", () => {
 function addTask(e) {
   let li = document.createElement('li')
   li.innerText = e
+  li.style.fontSize = '2vw'
   document.getElementById('tasks').appendChild(li)
   if (li.innerText === '') {
     li.remove()
   }
 
   let button = document.createElement('button')
-  button.innerText = "remove"
-  button.style.fontSize = '2vw'
+  button.innerText = "X"
+  button.style.fontSize = '1vw'
   button.style.marginLeft = '15px'
   button.style.backgroundColor = 'black'
   button.style.color= 'red'
