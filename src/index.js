@@ -28,6 +28,6 @@ function addTask(e) {
   removeTask(button)
 }
 
-function removeTask(e) {
-  e.addEventListener('click', () => e.parentNode.remove()
+function removeTask(element) {
+  element.addEventListener('click', () => element.parentNode.remove()
 )}
